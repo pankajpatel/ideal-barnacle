@@ -1,5 +1,5 @@
-function App() {
-  return <div />;
-}
+import { RoutedPages } from "./pages";
 
-export default App;
+export const App = () => {
+  return <RoutedPages />;
+};
