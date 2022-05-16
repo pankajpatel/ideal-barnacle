@@ -1,0 +1,17 @@
+{
+  "date": "2021-04-01T00:00:00.000Z",
+  "groups": [
+    {
+      "key": "Compute",
+      "amount": 53.33
+    },
+    {
+      "key": "Storage",
+      "amount": 146.1
+    },
+    {
+      "key": "Network",
+      "amount": 72.35
+    }
+  ]
+}
