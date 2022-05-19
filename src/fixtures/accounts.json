@@ -1,6 +1,26 @@
-{
-  "id": "62666a73422739696d520c91",
-  "provider": "AWS",
-  "label": "production",
-  "logo": "https://cdn.komiser.io/images/aws.png"
-}
+[
+  {
+    "id": "62666a73422739696d520c91",
+    "provider": "AWS",
+    "label": "production",
+    "logo": "https://cdn.komiser.io/images/aws.png"
+  },
+  {
+    "id": "62666a8871de087ea28c9c95",
+    "provider": "AWS",
+    "label": "sandbox",
+    "logo": "https://cdn.komiser.io/images/aws.png"
+  },
+  {
+    "id": "62666a91fb16e319c907eded",
+    "provider": "GCP",
+    "label": "staging",
+    "logo": "https://cdn.komiser.io/images/gcp.png"
+  },
+  {
+    "id": "62666a9fcdde514b58a58ad8",
+    "provider": "Azure",
+    "label": "production",
+    "logo": "https://swimburger.net/media/fbqnp2ie/azure.svg"
+  }
+]

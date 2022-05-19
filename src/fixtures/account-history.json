@@ -1,17 +1,98 @@
-{
-  "date": "2021-04-01T00:00:00.000Z",
-  "groups": [
-    {
-      "key": "Compute",
-      "amount": 53.33
-    },
-    {
-      "key": "Storage",
-      "amount": 146.1
-    },
-    {
-      "key": "Network",
-      "amount": 72.35
-    }
-  ]
-}
+[
+  {
+    "date": "2021-05-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 187.85 },
+      { "key": "Storage", "amount": 109.36 },
+      { "key": "Network", "amount": 82.61 }
+    ]
+  },
+  {
+    "date": "2021-06-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 88.25 },
+      { "key": "Storage", "amount": 26.45 },
+      { "key": "Network", "amount": 56.38 }
+    ]
+  },
+  {
+    "date": "2021-07-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 229.98 },
+      { "key": "Storage", "amount": 34.81 },
+      { "key": "Network", "amount": 63.25 }
+    ]
+  },
+  {
+    "date": "2021-08-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 133.07 },
+      { "key": "Storage", "amount": 240.7 },
+      { "key": "Network", "amount": 14.12 }
+    ]
+  },
+  {
+    "date": "2021-09-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 137.68 },
+      { "key": "Storage", "amount": 1.82 },
+      { "key": "Network", "amount": 213.37 }
+    ]
+  },
+  {
+    "date": "2021-10-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 110.73 },
+      { "key": "Storage", "amount": 170.97 },
+      { "key": "Network", "amount": 21.92 }
+    ]
+  },
+  {
+    "date": "2021-11-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 50.51 },
+      { "key": "Storage", "amount": 65.97 },
+      { "key": "Network", "amount": 169.61 }
+    ]
+  },
+  {
+    "date": "2021-12-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 69.79 },
+      { "key": "Storage", "amount": 97.76 },
+      { "key": "Network", "amount": 208.23 }
+    ]
+  },
+  {
+    "date": "2022-01-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 242.88 },
+      { "key": "Storage", "amount": 208.43 },
+      { "key": "Network", "amount": 130.99 }
+    ]
+  },
+  {
+    "date": "2022-02-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 106.39 },
+      { "key": "Storage", "amount": 179.98 },
+      { "key": "Network", "amount": 178.2 }
+    ]
+  },
+  {
+    "date": "2022-03-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 10.05 },
+      { "key": "Storage", "amount": 130.76 },
+      { "key": "Network", "amount": 123.37 }
+    ]
+  },
+  {
+    "date": "2022-04-01T00:00:00.000Z",
+    "groups": [
+      { "key": "Compute", "amount": 87.64 },
+      { "key": "Storage", "amount": 36.16 },
+      { "key": "Network", "amount": 62.63 }
+    ]
+  }
+]
