@@ -1,5 +1,11 @@
 import { FormattedNumber } from "react-intl";
 import styled from "styled-components";
+import { Spinner } from "../ds/components/Spinner";
+import { useCloudAccount } from "../hooks/useCloudAccount";
+
+interface StatsProps {
+  selectedCloudAccount: CloudAccountID | null;
+}
 
 const StatsWrapper = styled.div`
   display: grid;
@@ -7,10 +13,6 @@ const StatsWrapper = styled.div`
   grid-gap: 0.5rem;
   padding: 0.5rem;
 `;
-
-interface StatsProps {
-  value?: CloudAccountStats;
-}
 
 const Stat = styled.div`
   border: 1px solid #ccc;
@@ -34,8 +36,14 @@ const StatValue = styled.span`
   font-size: 2.8rem;
 `;
 
-export const Stats = ({ value }: StatsProps): JSX.Element => {
-  if (!value) {
+export const Stats = ({ selectedCloudAccount }: StatsProps): JSX.Element => {
+  const { isLoading, cloudAccount } = useCloudAccount(selectedCloudAccount);
+
+  if (isLoading) {
+    return <Spinner />;
+  }
+
+  if (!cloudAccount) {
     return <div>There was some problem with loading the account stats</div>;
   }
 
@@ -48,22 +56,22 @@ export const Stats = ({ value }: StatsProps): JSX.Element => {
             // eslint-disable-next-line react/style-prop-object
             style="currency"
             currency="EUR"
-            value={value?.bill}
+            value={cloudAccount?.bill}
             currencyDisplay="symbol"
           />
         </StatValue>
       </Stat>
       <Stat>
         <StatTitle>Servers</StatTitle>
-        <StatValue>{value?.servers}</StatValue>
+        <StatValue>{cloudAccount?.servers}</StatValue>
       </Stat>
       <Stat>
         <StatTitle>Regions</StatTitle>
-        <StatValue>{value?.regions}</StatValue>
+        <StatValue>{cloudAccount?.regions}</StatValue>
       </Stat>
       <Stat>
         <StatTitle>Alarms</StatTitle>
-        <StatValue>{value?.alarms}</StatValue>
+        <StatValue>{cloudAccount?.alarms}</StatValue>
       </Stat>
     </StatsWrapper>
   );

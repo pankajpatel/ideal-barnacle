@@ -25,7 +25,7 @@ type Expense = {
   [key in Keys]?: number;
 };
 
-export const CloudAccountCharts = ({
+export const CloudAccountMonthlyComparison = ({
   data,
   months = 6,
 }: {
